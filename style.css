@@ -15,26 +15,26 @@
   min-height: 100vh;
 }
 
-.card1,
-.card2 {
+.card-left,
+.card-right {
   display: grid;
 }
 
-.card1:hover {
+.card-left:hover {
   transform: scale(0.98);
 }
 
-.card2:hover {
+.card-right:hover {
   box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.2);
 }
 
-.card1 {
+.card-left {
   grid-area: 2 / 2 / 2 / 2;
   grid-template: 3fr 1fr 2fr 1fr / 1fr 1fr;
   transition: all .3s ease-out;
 }
 
-.card2 {
+.card-right {
   grid-area: 2 / 4 / 2 / 4;
   grid-template: 1fr 3fr 2fr 1fr / 1fr 1fr;
   padding: 5% 10%;
@@ -42,13 +42,13 @@
   box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
 }
 
-.title1 {
+.title-left {
   grid-area: 2 / 1 / 3 / 3;
   margin-top: 10px;
 }
 
 
-.title2 {
+.title-right {
   grid-area: 1 / 1 / 1 / 3;
   text-align: center;
 }
@@ -59,52 +59,52 @@ h1 {
   font-size: 2.25rem;
 }
 
-.subtitle1 {
+.subtitle-left {
   color: #3b526f;
   font-size: 1.5rem;
 }
-.subtitle2 {
+.subtitle-right {
   color: #8a3030;
   font-size: 1.5rem;
 }
 
-.image-container1,
-.image-container2 {
+.image-container-left,
+.image-container-right {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 
 }
 
-.image-container1 {
+.image-container-left {
   background-image: url(zagreb.jpg);
   grid-area: 1 / 1 / 2 / 3;
   border-radius: 6px;
 }
 
-.image-container2 {
+.image-container-right {
   background-image: url(dubrovnik.jpg);
   grid-area: 2 / 1 / 2/ 3;
   margin-top: 10px;
 }
 
-.text-container1,
-.text-container2 {
+.text-container-left,
+.text-container-right {
   color: #666666;
   margin: 10px 0;
   font-size: 1.1rem;
 }
 
-.text-container1 {
+.text-container-left {
   grid-area: 3 / 1 / 4 / 3;
 }
 
-.text-container2 {
+.text-container-right {
   grid-area: 3 / 1 / 3 / 3;
 }
 
-.footer1,
-.footer2 {
+.footer-left,
+.footer-right {
   grid-area: 4 / 1 / 4 / 3;
   display: flex;
   /*grid-template: 1fr / 1fr 1fr;*/
@@ -113,8 +113,8 @@ h1 {
   padding: 30px 10px 0 10px;
 }
 
-.button1,
-.button2 {
+.button-left,
+.button-right {
   /*grid-area: 1 / 1 / 2 / 2;*/
   background-color: #8a3030;
   padding: 5px 10px;
@@ -128,26 +128,26 @@ a {
   text-decoration: none;
 }
 
-.button1 a,
-.button2 a {
+.button-left a,
+.button-right a {
   color: #ffffff;
 }
 
-.button1 {
+.button-left {
   border-radius: 6px;
   background-color: #3b526f;
 }
 
-.button1:hover {
+.button-left:hover {
   box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.4);
 }
 
-.button2:hover {
+.button-right:hover {
   transform: scale(1.2);
 }
 
-.social1,
-.social2 {
+.social-left,
+.social-right {
   /*grid-area: 1 / 2 / 2 / 3;*/
   display: flex;
   flex-direction: column;
